@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <form action="/chats/<%= singleChat._id %>?_method=PUT" method="POST">
+        <p><strong>Chat id : </strong> <%= singleChat._id %></p>
+        <p> <strong>To: </strong> <%= singleChat.to %> </p>
+        <h2>Edit your message here</h2>
+        <p><strong>From</strong>  <%= singleChat.from %> </p>
+        <textarea name="msg" ><%= singleChat.msg %></textarea> <br>
+        <button type="submit">Save Changes</button>
+      </form> 
+</body>
+</html>
